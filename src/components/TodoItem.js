@@ -25,7 +25,7 @@ const TodoItem = ({item,id,deleteTodo,isEditing,startEditing,finishEditing}) => 
                     
                     (
                         <>
-                        {item.value} (<a class="edit" href="#" onClick={()=>startEditing(id)}>Edit</a>|<a class="delete" href="#" onClick={()=>deleteTodo(id)}>Delete</a>)
+                        {item.value} (<a className="edit" href="#" onClick={()=>startEditing(id)}>Edit</a>|<a className="delete" href="#" onClick={()=>deleteTodo(id)}>Delete</a>)
                         </>
                         )
 

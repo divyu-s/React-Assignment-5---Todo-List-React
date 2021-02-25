@@ -7,7 +7,7 @@ const TodoList = ({todos,deleteTodo,startEditing,finishEditing}) => {
         <div>
             <ul>
                 {todos.map((item,index)=>(
-                  <TodoItem item={item} id={item.id} deleteTodo={deleteTodo} isEditing={item.isEditing} startEditing={startEditing} finishEditing={finishEditing}/>
+                  <TodoItem key={index} item={item} id={item.id} deleteTodo={deleteTodo} isEditing={item.isEditing} startEditing={startEditing} finishEditing={finishEditing}/>
                 ))
                } 
             </ul>
